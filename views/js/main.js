@@ -430,14 +430,14 @@ var resizePizzas = function(size) {
 
     // TODO: change to 3 sizes? no more xl?
     // Changes the slider value to a percent width
-   /* function sizeSwitcher (size) {
+    function sizeSwitcher (size) {
       switch(size) {
         case "1":
-          return 0.25;
+          return 25;
         case "2":
-          return 0.3333;
+          return 33.33;
         case "3":
-          return 0.5;
+          return 50;
         default:
           console.log("bug in sizeSwitcher");
       }
@@ -457,9 +457,9 @@ var resizePizzas = function(size) {
       var newwidth = (randomPizzas[i].offsetWidth + dx) + 'px';
       randomPizzas[i].style.width = newwidth;
     }
-  }*/
+  }
   
-   function changePizzaSizes(size){
+ /*  function changePizzaSizes(size){
 	   
 	   switch(size){
 		   case "1":
@@ -480,7 +480,7 @@ var resizePizzas = function(size) {
    for (var i = 0; i < randomPizzas.length; i++){
 	   randomPizzas[1].style.width = newWidth + "%";
    }
-
+*/
   changePizzaSizes(size);
 
   // User Timing API is awesome
