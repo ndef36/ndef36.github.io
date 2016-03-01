@@ -459,7 +459,7 @@ var resizePizzas = function(size) {
     }
   }*/
    function changePizzaSizes(size){
-	   var newWidth;
+	   var newWidth = 33.33;
 	   switch(size){
 		   case "1":
 				newWidth = 25;
