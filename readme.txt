@@ -12,6 +12,7 @@ views/pizza.html
 4. Create variable newWidth to store the values for the switch case in the function changePizzaSizes
 5. In function changePizzaSizes Create variable randomPizzas to reduce dom query requests
 6. Modify the changepizzaSizes for loop to use the randomPizzas variable
+7. Created a variable for document.body.scrollTop outside the for loop in function updatePositions in order to reduce dom requests
 
 views/css/style.css
 1. Use will-change: transform in .mover to reduce painting while scrolling
