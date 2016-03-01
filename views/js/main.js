@@ -423,14 +423,14 @@ var resizePizzas = function(size) {
   changeSliderLabel(size);
 
    // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
- /* function determineDx (elem, size) {
+ function determineDx (elem, size) {
     var oldWidth = elem.offsetWidth;
     var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
-    var oldSize = oldWidth / windowWidth; */
+    var oldSize = oldWidth / windowWidth; 
 
     // TODO: change to 3 sizes? no more xl?
     // Changes the slider value to a percent width
-    /*function sizeSwitcher (size) {
+    function sizeSwitcher (size) {
       switch(size) {
         case "1":
           return 0.25;
@@ -457,8 +457,8 @@ var resizePizzas = function(size) {
       var newwidth = (randomPizzas[i].offsetWidth + dx) + 'px';
       randomPizzas[i].style.width = newwidth;
     }
-  }*/
-  var newWidth = 33.33;
+  }
+  /*var newWidth = 33.33;
    function changePizzaSizes(size){
 	   
 	   switch(size){
@@ -478,7 +478,7 @@ var resizePizzas = function(size) {
    
    for (var i = 0; i < randomPizzas.length; i++){
 	   randomPizzas[1].style.width = newWidth + "%";
-   }
+   }*/
 
   changePizzaSizes(size);
 
