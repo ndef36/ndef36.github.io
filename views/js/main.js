@@ -430,7 +430,7 @@ var resizePizzas = function(size) {
 
     // TODO: change to 3 sizes? no more xl?
     // Changes the slider value to a percent width
-    function sizeSwitcher (size) {
+   /* function sizeSwitcher (size) {
       switch(size) {
         case "1":
           return 0.25;
@@ -457,28 +457,29 @@ var resizePizzas = function(size) {
       var newwidth = (randomPizzas[i].offsetWidth + dx) + 'px';
       randomPizzas[i].style.width = newwidth;
     }
-  }
-  /*var newWidth = 33.33;
+  }*/
+  
    function changePizzaSizes(size){
 	   
 	   switch(size){
 		   case "1":
-				newWidth = 25;
+				return = 25;
 			case "2":
-				newWidth = 33.33;
+				return = 33.33;
 			case "3":
-				newWidth = 50;
+				return = 50;
 				break;
 			default:
 				console.log("bug in changePizzaSizes");
 				
 	   }
    }
+   var newWidth = changePizzaSizes(size);
    var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
    
    for (var i = 0; i < randomPizzas.length; i++){
 	   randomPizzas[1].style.width = newWidth + "%";
-   }*/
+   }
 
   changePizzaSizes(size);
 
